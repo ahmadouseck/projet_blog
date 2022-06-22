@@ -1,0 +1,41 @@
+{% block sidebar %}
+<style>
+        .card{
+            box-shadow: 0 16px 48px #E3E7EB;
+        }
+
+</style>
+
+<!-- Sidebar Widgets Column -->
+<div class="col-md-4 float-right ">
+<div class="card my-4">
+        <h5 class="card-header">Contactez-nous</h5>
+    <div class="card-body">
+        <p class="card-text"> This awesome blog is made on the top of our Favourite full stack Framework 'Django', follow up the tutorial to learn how we made it..!</p>
+        <form class="row g-3">
+            <div class="col-md-6">
+              <label for="inputEmail4" class="form-label">Prénom</label>
+              <input type="email" class="form-control" id="inputEmail4" placeholder="prénom">
+            </div>
+            <div class="col-md-6">
+              <label for="inputPassword4" class="form-label">Nom</label>
+              <input type="password" class="form-control" id="inputPassword4" placeholder="nom">
+            </div>
+            <div class="col-12 mt-2">
+              <label for="inputAddress" class="form-label">E-mail</label>
+              <input type="text" class="form-control" id="inputAddress" placeholder="email">
+            </div>
+            <div class="col-12 mt-2">
+                <label for="inputAddress" class="form-label">Message</label>
+                <textarea class="form-control" aria-label="With textarea" placeholder="message"></textarea>
+              </div>
+
+            <div class="col-12 mt-4">
+              <button type="submit" class="btn btn-primary">Envoyer</button>
+            </div>
+          </form>
+    </div>
+</div>
+</div>
+
+{% endblock sidebar %}
