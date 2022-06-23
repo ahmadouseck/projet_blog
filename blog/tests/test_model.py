@@ -1,7 +1,7 @@
 from django.test import TestCase
-from requests import request
 from blog.models import Post
 from django.contrib.auth.models import User
+
 
 
 class TestModels(TestCase):

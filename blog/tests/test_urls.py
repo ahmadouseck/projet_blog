@@ -2,6 +2,7 @@ from django.test import SimpleTestCase
 from django.urls import reverse,resolve
 from blog.views import PostList,PostDetail
 
+
 class TestsUrls(SimpleTestCase):
     def test_list_urls(self):
         url = reverse('home')
