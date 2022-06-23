@@ -60,7 +60,7 @@ py==1.11.0
 Pygments==2.11.2
 pylev==1.4.0
 pyparsing==3.0.7
-pypiwin32==223
+pypiwin32==304
 pytest==7.1.2
 pytest-django==4.5.2
 python-dateutil==2.8.2
