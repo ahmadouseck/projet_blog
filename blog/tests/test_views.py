@@ -1,8 +1,8 @@
 from django.forms import SlugField
 from django.test import TestCase, Client
 from django.urls import reverse
-from models import Post
 from django.contrib.auth.models import User
+from ..models import Post
 
 
 class TestViews(TestCase):
