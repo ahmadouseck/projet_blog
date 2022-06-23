@@ -1,6 +1,7 @@
 from django.test import TestCase
-from models import Post
+
 from django.contrib.auth.models import User
+from requests import post
 
 
 
@@ -9,7 +10,7 @@ class TestModels(TestCase):
          #Set up non-modified objects used by all test methods
         self.user = User.objects.create_user(username="name", email="email@mail.com", password="Pass12345")
        
-        self.post = Post.objects.create(
+        self.post = post.objects.create(
             title="Mon titre",
             author= self.user,
             updated_on="2022-06-21",

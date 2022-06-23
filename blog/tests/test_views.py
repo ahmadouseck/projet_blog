@@ -1,8 +1,9 @@
 from django.forms import SlugField
 from django.test import TestCase, Client
 from django.urls import reverse
-from models import Post
+
 from django.contrib.auth.models import User
+from requests import post
 
 
 class TestViews(TestCase):
@@ -13,7 +14,7 @@ class TestViews(TestCase):
 
         self.user = User.objects.create_user(username="name", email="email@mail.com", password="Pass12345")
 
-        self.post1 = Post.objects.create(
+        self.post1 = post.objects.create(
             title="post1",
             slug = "post1",
             author=self.user,
